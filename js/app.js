@@ -15,7 +15,7 @@
       $scope.checkIfTooMuch = function() {
         if(!$scope.dishes) {
           $scope.message = "Please enter data first";
-          $scope.messageType = 'alert-success'
+          $scope.messageType = 'alert-danger'
         } else if (checkDishesLength($scope.dishes) < 4) {
           $scope.message = "Enjoy!";
           $scope.messageType = 'alert-success'
